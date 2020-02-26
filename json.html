@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+	<pre id="demo">
+	</pre>
+<script>
+	var text = '{ "sites" : [' +
+	'{ "name":"Runoob" , "url":"www.runoob.com" },' +
+	'{ "name":"Google" , "url":"www.google.com" },' +
+	'{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+	
+    obj = JSON.parse(text);
+	var a = JSON.stringify(obj);     
+	document.getElementById("demo").innerHTML = a;
+</script>
+
+</body>
+</html>
